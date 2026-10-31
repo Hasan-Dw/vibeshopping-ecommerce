@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load product photos without a Referer header: some image hosts
+     reject hotlinked requests (HTTP 403), so we simply send none. -->
+<meta name="referrer" content="no-referrer">
+<title>VibeShopping — Considered goods for everyday rhythm</title>
+<meta name="description" content="VibeShopping Goods & Supply — apparel, objects and essentials. Small batches, honest materials, free shipping over $75.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231C1915'/%3E%3Ctext x='9' y='22' font-family='sans-serif' font-weight='700' font-size='16' fill='%23F4EFE5'%3EV%3C/text%3E%3Ccircle cx='23' cy='23' r='4' fill='%237A2028'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('vibeshopping_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header" data-header></header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero"><div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-issue"><b>N° 04 — Autumn</b><span class="rule"></span><span>The Supply Edit</span></div>
+      <h1>Considered goods for <em>everyday rhythm.</em></h1>
+      <p class="hero-sub">Apparel, objects and essentials in small batches — honest materials, quiet colours, and cuts that outlast the season. Curated weekly, restocked rarely.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="products.html">Shop the collection →</a>
+        <a class="btn btn-ghost" href="products.html?sort=price-asc">Under $50</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>30-day</b><span>easy returns</span></div>
+        <div><b>New weekly</b><span>fresh arrivals</span></div>
+        <div><b>Free $75+</b><span>carbon-neutral ship</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-sticker"><span>New<br>Season</span></div>
+      <a class="hero-photo" href="products.html" aria-label="Shop the collection"><img id="heroMain" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='800'%3E%3Crect width='100%25' height='100%25' fill='%23ECE4D3'/%3E%3C/svg%3E" alt="Featured product" referrerpolicy="no-referrer" onerror="handleProductPhotoError(this)"></a>
+      <div class="hero-column">
+        <div class="hero-thumb"><img id="heroSecond" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23E3D9C2'/%3E%3C/svg%3E" alt="Secondary product" referrerpolicy="no-referrer" onerror="handleProductPhotoError(this)"></div>
+        <div class="hero-card" id="heroTag"><small>Object of the week</small><b>Loading…</b></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true"><div class="marquee-inner">
+    <span>New season drop</span><span>Free shipping over $75</span><span>Small-batch essentials</span><span>30-day returns</span><span>Designed to be kept</span>
+    <span>New season drop</span><span>Free shipping over $75</span><span>Small-batch essentials</span><span>30-day returns</span><span>Designed to be kept</span>
+  </div></div>
+
+  <!-- CATEGORIES -->
+  <section class="section tight"><div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Departments</span><h2>Shop by <em>department</em></h2></div><a class="link-arrow" href="products.html">View all products →</a></div>
+    <div class="category-list" id="catIndex"><p class="muted">Loading departments…</p></div>
+  </div></section>
+
+  <!-- FEATURED -->
+  <section class="section tight" style="padding-top:0"><div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Featured</span><h2>Featured <em>pieces</em></h2><p>A short selection from the current catalog — the first pieces on the shelf this week.</p></div><a class="link-arrow" href="products.html">Shop everything →</a></div>
+    <div class="product-grid" id="featured"></div>
+  </div></section>
+
+  <!-- CURATED FEATURE -->
+  <section class="section tight" style="padding-top:0"><div class="wrap">
+    <div class="feature dark">
+      <div class="feature-media"><img id="curatedImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%232A2724'/%3E%3C/svg%3E" alt="Curated collection" referrerpolicy="no-referrer" onerror="handleProductPhotoError(this)"></div>
+      <div class="feature-body">
+        <span class="eyebrow">The autumn supply — 02</span>
+        <h3>Heavy fabrics, <em>soft structure.</em> Built for the long commute.</h3>
+        <p>Brushed cottons, dense knits and washed canvas. Every piece is garment-dyed, pre-shrunk and cut with room to move — then tested for a full season before it earns a restock.</p>
+        <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap"><a class="btn btn-accent" href="products.html">Shop the edit</a><a class="btn btn-ghost" href="product-details.html?id=1">Read the notes</a></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section tight" style="padding-top:0"><div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Just landed</span><h2>New <em>arrivals</em></h2></div><a class="link-arrow" href="products.html?sort=featured">View newest →</a></div>
+    <div class="product-grid" id="arrivals"></div>
+  </div></section>
+
+  <!-- FOUNDER STORY -->
+  <section class="section tight" id="story" style="padding-top:0"><div class="wrap">
+    <div class="quote"><blockquote>“We don’t chase seasons. We buy <em>fewer, better things</em> — and stand behind every stitch.”</blockquote><cite>— Mara Venn, Founder, VibeShopping Goods &amp; Supply</cite></div>
+  </div></section>
+</main>
+<footer class="footer" data-footer></footer>
+<script src="js/api.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Checkout & Orders — VibeShopping</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231C1915'/%3E%3Ctext x='9' y='22' font-family='sans-serif' font-weight='700' font-size='16' fill='%23F4EFE5'%3EV%3C/text%3E%3Ccircle cx='23' cy='23' r='4' fill='%237A2028'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('vibeshopping_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header" data-header></header>
+<main id="main">
+  <div class="page-head"><div class="wrap">
+    <nav class="crumbs"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span>Checkout</span></nav>
+    <h1>Check<em>out.</em></h1>
+    <p class="sub">Simulated payment — no real charge. Orders are stored locally with an ID, date, items and status.</p>
+  </div></div>
+  <div class="wrap">
+    <div id="success" style="display:none"></div>
+    <div class="checkout-layout" id="coLayout">
+      <div id="coForm"></div>
+      <aside class="order-summary" id="coSum"></aside>
+    </div>
+    <div class="divider-label">Order history</div>
+    <div id="orders" style="padding-bottom:60px"></div>
+  </div>
+</main>
+<footer class="footer" data-footer></footer>
+<script src="js/api.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

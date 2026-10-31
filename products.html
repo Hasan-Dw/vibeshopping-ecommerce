@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Products — VibeShopping</title>
+<meta name="description" content="Browse the full VibeShopping catalog. Search, filter and sort considered goods.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231C1915'/%3E%3Ctext x='9' y='22' font-family='sans-serif' font-weight='700' font-size='16' fill='%23F4EFE5'%3EV%3C/text%3E%3Ccircle cx='23' cy='23' r='4' fill='%237A2028'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('vibeshopping_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header" data-header></header>
+<main id="main">
+  <div class="page-head"><div class="wrap">
+    <nav class="crumbs"><a href="index.html">Home</a> / <span>Products</span></nav>
+    <h1>The <em>catalog.</em></h1>
+    <p class="sub">Every piece in the store, on one shelf. Search by name, filter by department or price, and sort to suit your priorities.</p>
+  </div></div>
+  <div class="wrap" style="padding-bottom:60px">
+    <div class="toolbar" role="search">
+      <label class="search"><img src="assets/icons/search.svg" alt=""><input id="q" type="search" placeholder="Search jackets, tees, furniture…" aria-label="Search products" autocomplete="off"></label>
+      <div class="toolbar-right">
+        <label class="price-filter">Max <input type="range" id="maxPrice" min="10" max="1000" step="5" value="1000" aria-label="Maximum price"> <b id="priceOut">Up to $1,000</b></label>
+        <select class="sort-select" id="sort" aria-label="Sort products">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="name-asc">Name: A → Z</option>
+          <option value="name-desc">Name: Z → A</option>
+        </select>
+      </div>
+    </div>
+    <div class="chip-row" id="chips" aria-label="Category filters"></div>
+    <div class="results-meta" id="meta"></div>
+    <div class="product-grid" id="grid"></div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</main>
+<footer class="footer" data-footer></footer>
+<script src="js/api.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>
